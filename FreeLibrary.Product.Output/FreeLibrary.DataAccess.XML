@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeLibrary.DataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:FreeLibrary.DataAccess.Base.BaseDataAccess">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.DataAccess.Base.BaseDataAccess.#ctor(FreeLibrary.Core.Connection.BaseConnection)">
+            <summary>
+            protected ctor of BaseDL.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.DataAccess.Base.BaseDataAccess.Dispose">
+            <summary>
+            Disposes DbManager object with sub objects.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.DataAccess.Base.BaseDataAccess.ConnectionType">
+            <summary>
+            Gets ConnectionType of Base DataLayer.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.DataAccess.Extensions.DataAccessExtension.ToList``1(System.Data.DataTable,System.Boolean)">
+            <summary>
+            This method returns A List of T object.
+            </summary>
+            <typeparam name="T">T object type</typeparam>
+            <param name="datatable">Datatble object</param>
+            <param name="accordingToColumn">if it is true, returns a List with DataTable Columns else returns a List with PropertyInfo of Object.</param>
+            <returns>Returns A List of T object.</returns>
+        </member>
+    </members>
+</doc>

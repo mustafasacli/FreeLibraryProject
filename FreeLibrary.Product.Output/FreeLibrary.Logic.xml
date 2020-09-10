@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeLibrary.Logic</name>
+    </assembly>
+    <members>
+        <member name="M:FreeLibrary.Logic.BaseDL.#ctor">
+            <summary>
+            protected ctor of BaseDL.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.#ctor(FreeLibrary.Core.Interfaces.IConnection)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.#ctor(System.String)">
+            <summary>
+            protected ctor of BaseDL.
+            </summary>
+            <param name="connectionName">connection property name</param>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.#ctor(FreeLibrary.Core.Enums.ConnectionTypes,System.String)">
+            <summary>
+            protected ctor of BaseDL.
+            </summary>
+            <param name="connectionType">Connection Type.</param>
+            <param name="connectionString">Connection String.</param>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.Insert(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets exceution result of Insert Operation.
+            </summary>
+            <param name="bo">BaseBO object.</param>
+            <returns>returns int</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.InsertAndGetId(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Inserts and Gets Id of BaseBO object.
+            </summary>
+            <param name="bo">BaseBO object.</param>
+            <returns>returns int</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.Update(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets exceution result of Update Operation.
+            </summary>
+            <param name="bo">BaseBO object.</param>
+            <returns>returns int</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.Delete(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets exceution result of Delete Operation.
+            </summary>
+            <param name="bo">BaseBO object.</param>
+            <returns>returns int</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.Insert(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Insert the record to table with table_name with given fields.
+            </summary>
+            <param name="table_name">table name</param>
+            <param name="fields">column and values</param>
+            <returns>Returns exec result of Insert.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.Update(System.String,System.String,System.Object,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Update records with given parameters.
+            </summary>
+            <param name="table_name">table name</param>
+            <param name="where_column">id column name, if null or empty value will be "id"</param>
+            <param name="where_value">id column value</param>
+            <param name="fields">column and values</param>
+            <returns>Returns exec result of Update.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetTable(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets All Table Records of BaseBO object.
+            </summary>
+            <param name="bo">IBaseBO object.</param>
+            <returns>Returns a System.Data.DataTable</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetById(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets One Record of BaseBO object if any object has BaseBO Id.
+            </summary>
+            <param name="bo">IBaseBO object.</param>
+            <returns>Returns a System.Data.DataTable</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetChangeColumnList(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets Columns which baseBo object changelist contains.
+            Example: Column Change List Of BaseBO : Col1, Col2, Col3.
+            Query = Select Col1, Col2, Col3 From Table_Of_IBaseBO;
+            </summary>
+            <param name="bo">IBaseBO object.</param>
+            <returns>Returns a System.Data.DataTable</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetWhereChangeColumnList(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Gets Columns which baseBo object changelist contains.
+            Example: Column Change List Of BaseBO : Col1, Col2, Col3.
+            Query = Select *  From TableOfBaseBO Where Col1=Col1Value And Col2=Col2Value And Col3=Col3Value;
+            </summary>
+            <param name="bo">IBaseBO object.</param>
+            <returns>Returns a System.Data.DataTable</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetResultSetOfQuery(System.String)">
+            <summary>
+            Returns A DataSet with given Query without any parameter
+            </summary>
+            <param name="query">Sql Query</param>
+            <returns>Returns A DataSet with given Query without any parameter</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetResultSetOfProcedure(System.String)">
+            <summary>
+            Gets ResultSet with given Procedure without any parameter.
+            </summary>
+            <param name="query">Sql Procedure</param>
+            <returns>Returns A DataSet with given Procedure without any parameter</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetResultSetOfQuery(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Returns A DataSet with given Query with parameter(s).
+            </summary>
+            <param name="query">Sql Query</param>
+            <param name="parameters">Hashmap which contains parameters</param>
+            <returns>Returns A DataSet with given Query without any parameter</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.GetResultSetOfProcedure(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Returns A DataSet with given Procedure without any parameter
+            </summary>
+            <param name="query">Sql Procedure</param>
+            <param name="parameters">Hashmap parameters</param>
+            <returns>Returns A DataSet with given Procedure without any parameter</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteQuery(System.String)">
+            <summary>
+            Returns execution value of query.
+            </summary>
+            <param name="query">Sql Query</param>
+            <returns>Returns execution value of query.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteProcedure(System.String)">
+            <summary>
+            Returns execution value of Procedure.
+            </summary>
+            <param name="query">Sql Procedure</param>
+            <returns>Returns execution value of Procedure.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteQuery(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Returns execution value of query.
+            </summary>
+            <param name="query">Sql Query</param>
+            <param name="parameters">Hashmap contains parameters.</param>
+            <returns>Returns execution value of query with parameters.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteProcedure(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Returns execution value of Procedure.
+            </summary>
+            <param name="query">Sql Procedure</param>
+            <param name="parameters">Hashmap contains parameters.</param>
+            <returns>Returns execution value of Procedure with parameters.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteScalarAsQuery(System.String)">
+            <summary>
+            Returns scalar execution value of query.
+            </summary>
+            <param name="query">Sql Query</param>
+            <returns>Returns scalar execution value of query.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteScalarAsProcedure(System.String)">
+            <summary>
+            Returns scalar execution value of Procedure.
+            </summary>
+            <param name="query">Sql Procedure</param>
+            <returns>Returns scalar execution value of Procedure.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteScalarAsQuery(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Returns scalar execution value of query with parameters.
+            </summary>
+            <param name="query">Sql Query</param>
+            <param name="parameters">Prperty contains parameters.</param>
+            <returns>Returns scalar execution value of query with parameters.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.ExecuteScalarAsProcedure(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Returns scalar execution value of Procedure with parameters.
+            </summary>
+            <param name="query">Sql Procedure</param>
+            <param name="parameters">Hashmap contains parameters.</param>
+            <returns>Returns scalar execution value of Procedure with parameters.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.BaseDL.Dispose">
+            <summary>
+            Disposes DbManager object with sub objects.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.Logic.BaseDL.ConnectionType">
+            <summary>
+            Gets ConnectionType of Base DataLayer.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Logic.DLExtension.ToList``1(System.Data.DataTable,System.Boolean)">
+            <summary>
+            This method returns A List of T object.
+            </summary>
+            <typeparam name="T">T object type</typeparam>
+            <param name="datatable">Datatble object</param>
+            <param name="accordingToColumn">if it is true, returns a List with DataTable Columns else returns a List with PropertyInfo of Object.</param>
+            <returns>Returns A List of T object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.Insert(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Inserts BaseBO object and returns execution value.
+            </summary>
+            <param name="baseBO">BaseBO object.</param>
+            <returns>Returns Execution value of Insert query.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.InsertAndGetId(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Inserts BaseBO object and returns Identity value.
+            </summary>
+            <param name="baseBO">IBaseBO object.</param>
+            <returns>Returns Identity value</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.Delete(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Updates BaseBO object and returns execution value of delete query.
+            </summary>
+            <param name="baseBO">IBaseBO object.</param>
+            <returns>returns execution value of delete query.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.Update(FreeLibrary.Entity.IBaseBO)">
+            <summary>
+            Updates BaseBO object and returns execution value of update query.
+            </summary>
+            <param name="baseBO">BaseBOIBaseBO object.</param>
+            <returns>returns execution value of update query.</returns>
+        </member>
+        <member name="P:FreeLibrary.Logic.IBaseDL.ConnectionType">
+            <summary>
+            Returns Driver Type of Data Layer.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.Insert(System.String,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Insert the record to table with table_name with given fields.
+            </summary>
+            <param name="table_name">table name</param>
+            <param name="fields">column and values</param>
+            <returns>Returns exec result of Insert.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.Update(System.String,System.String,System.Object,FreeLibrary.Core.Parameter.Hashmap)">
+            <summary>
+            Update records with given parameters.
+            </summary>
+            <param name="table_name">table name</param>
+            <param name="where_column">id column name, if null or empty value will be "id"</param>
+            <param name="where_value">id column value</param>
+            <param name="fields">column and values</param>
+            <returns>Returns exec result of Update.</returns>
+        </member>
+        <member name="M:FreeLibrary.Logic.IBaseDL.Delete(System.String,System.String,System.Object)">
+            <summary>
+            Deletes records with given parameters.
+            </summary>
+            <param name="table_name">table name whose record will be deleted.</param>
+            <param name="where_column">where column name</param>
+            <param name="where_value">where col value</param>
+            <returns>Returns exec result of Delete.</returns>
+        </member>
+    </members>
+</doc>

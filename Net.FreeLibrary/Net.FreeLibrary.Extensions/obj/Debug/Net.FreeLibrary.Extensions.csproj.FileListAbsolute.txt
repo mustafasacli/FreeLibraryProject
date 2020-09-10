@@ -1,0 +1,7 @@
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\bin\Debug\Net.FreeLibrary.Extensions.dll
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\bin\Debug\Net.FreeLibrary.Extensions.pdb
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\obj\Debug\Net.FreeLibrary.Extensions.dll
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\obj\Debug\Net.FreeLibrary.Extensions.pdb
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\bin\Debug\Net.FreeLibrary.Extensions.dll.CodeAnalysisLog.xml
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\bin\Debug\Net.FreeLibrary.Extensions.dll.lastcodeanalysissucceeded
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Extensions\obj\Debug\Net.FreeLibrary.Extensions.csprojResolveAssemblyReference.cache

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeLibrary.SqlBuilding.Query</name>
+    </assembly>
+    <members>
+        <member name="T:FreeLibrary.SqlBuilding.Query.IQuery">
+            <summary>
+            Description of IQuery.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQuery.Parameters">
+            <summary>
+            Gets Hashmap contains parameter(s).
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQuery.Text">
+            <summary>
+            Gets Sql Query.
+            </summary>
+        </member>
+        <member name="T:FreeLibrary.SqlBuilding.Query.IQueryAdds">
+            <summary>
+            Represents Parameter Prefix, Column-Table Prefix And Suffix and last IdentityInsert Part.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQueryAdds.ParameterPrefix">
+            <summary>
+            Gets Parameter Name Prefix.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQueryAdds.Prefix">
+            <summary>
+            Gets Table and Column Name Prefix.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQueryAdds.Suffix">
+            <summary>
+            Gets Table and Column Name Suffix.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQueryAdds.IdentityInsertAdd">
+            <summary>
+            Gets Identity Insert Part of Query.
+            </summary>
+        </member>
+        <member name="T:FreeLibrary.SqlBuilding.Query.IQueryFormat">
+            <summary>
+            Represents format ofQuery.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.IQueryFormat.Format">
+            <summary>
+            Gets Format Of Query Type.
+            </summary>
+        </member>
+        <member name="T:FreeLibrary.SqlBuilding.Query.QueryAdds">
+            <summary>
+            Represents Parameter Prefix, Column-Table Prefix And Suffix and last IdentityInsert Part.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryAdds.#ctor(FreeLibrary.Core.Enums.ConnectionTypes)">
+            <summary>
+            Creates Query Object for parameter prefix, column prefix-suffix and identity insert parts.
+            </summary>
+            <param name="conn_type"></param>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.QueryAdds.ParameterPrefix">
+            <summary>
+            Gets Parameter Name Prefix.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.QueryAdds.Prefix">
+            <summary>
+            Gets Table and Column Name Prefix.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.QueryAdds.Suffix">
+            <summary>
+            Gets Table and Column Name Suffix.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.QueryAdds.IdentityInsertAdd">
+            <summary>
+            Gets Identity Insert Part of Query.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryAdds.GetParameterPrefix(FreeLibrary.Core.Enums.ConnectionTypes)">
+            <summary>
+            Returns Prefix for parameters according to Connection Type.
+            </summary>
+            <returns> Returns Prefix for parameters according to Connection Type.</returns>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryAdds.GetPrefix(FreeLibrary.Core.Enums.ConnectionTypes)">
+            <summary>
+            Returns Prefix for columns and tables according to Connection Type.
+            </summary>
+            <returns> Returns Prefix for columns and tables according to Connection Type.</returns>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryAdds.GetSuffix(FreeLibrary.Core.Enums.ConnectionTypes)">
+            <summary>
+            Returns Suffix for columns and tables according to Connection Type.
+            </summary>
+            <returns>Returns Suffix for columns and tables according to Connection Type.</returns>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryAdds.GetIdentityInsert(FreeLibrary.Core.Enums.ConnectionTypes)">
+            <summary>
+            Returns GetIdentity query part of InsertAndGetId.
+            </summary>
+            <returns> Returns GetIdentity query part of InsertAndGetId. </returns>
+        </member>
+        <member name="T:FreeLibrary.SqlBuilding.Query.QueryFormat">
+            <summary>
+            Represents format of Query.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Query.QueryFormat.Format">
+            <summary>
+            Gets Format Of Query Type.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryFormat.#ctor(FreeLibrary.SqlBuilding.Query.QueryTypes)">
+            <summary>
+            Creates Format Of Given Query Type.
+            </summary>
+            <param name="query_type"></param>
+        </member>
+        <member name="M:FreeLibrary.SqlBuilding.Query.QueryFormat.get_query_format(FreeLibrary.SqlBuilding.Query.QueryTypes)">
+            <summary>
+            Returns Format of Query according to QueryType.
+            </summary>
+            <param name="queryType"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

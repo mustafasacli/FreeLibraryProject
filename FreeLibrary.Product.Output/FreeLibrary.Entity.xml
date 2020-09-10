@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeLibrary.Entity</name>
+    </assembly>
+    <members>
+        <member name="M:FreeLibrary.Entity.BaseBO.#ctor">
+            <summary>
+            BaseBO Ctor.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.GetTableName">
+            <summary>
+            Gets Table Name Of BaseBO object.
+            </summary>
+            <returns>Returns Table Name Of BaseBO object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.GetIdColumn">
+            <summary>
+             Gets Identity Column Name Of BaseBO object.
+            </summary>
+            <returns>Returns Identity Column Name Of BaseBO object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.GetColumnChangeList">
+            <summary>
+            Gets Column Name list with property changed.
+            </summary>
+            <returns>Returns Column Name list with property changed.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.Equals(System.Object)">
+             <summary>
+            
+             </summary>
+             <param name="obj">object instance which inherits BaseBO object.</param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.GetHashCode">
+            <summary>
+            Gets HashCode of object.
+            </summary>
+            <returns>Returns HashCode int.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.Serialize(System.String,System.Boolean)">
+            <summary>
+            Write Object serialization result to a file.
+            </summary>
+            <param name="fileName"> File Name for Serialization object writing. </param>
+            <param name="append">if append is true Serialization continues with append.</param>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.Serialize(System.String)">
+            <summary>
+            Write Object serialization result to a file.
+            </summary>
+            <param name="fileName"> File Name for Serialization object writing. </param>
+        </member>
+        <member name="P:FreeLibrary.Entity.BaseBO.ChangeSetCount">
+            <summary>
+            Gets Count of Changed Property.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.IsPropertyChanged(System.String)">
+            <summary>
+            Returns true if Value of Property with given name changes, return true; else returns false.
+            </summary>
+            <param name="propName">Property Name</param>
+            <returns>Returns bool object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.Clear">
+            <summary>
+            Clears all change columns list.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.ValidateObject(System.Boolean)">
+            <summary>
+            Make Validation Operation for Insert/Update Object.
+            </summary>
+            <param name="isUpdate">Determines Validation is for update operation. 
+            If true, Validation is for Update operation else Validation Insert Operation.</param>
+            <returns>Returns IEntityValidationResult object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.BaseBO.ClearChanges(System.Boolean)">
+            <summary>
+            if includeIdColumn is true, Clears all change columns list, else Clear changes except id column.
+            </summary>
+            <param name="includeIdColumn">id column include determining parameter.</param>
+        </member>
+        <member name="T:FreeLibrary.Entity.IBaseBO">
+            <summary>
+            Description of IBaseBO.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.GetTableName">
+            <summary>
+            Returns Table Name Of IBaseBO object.
+            </summary>
+            <returns>Returns Table Name Of IBaseBO object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.GetIdColumn">
+            <summary>
+             Returns Identity Name Of IBaseBO object.
+            </summary>
+            <returns>Returns Identity Column Name Of IBaseBO object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.Clear">
+            <summary>
+            Clears all change columns list.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.Entity.IBaseBO.ChangeSetCount">
+            <summary>
+            Gets Count of Changed Property.
+            </summary>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.IsPropertyChanged(System.String)">
+            <summary>
+            Returns true if Value of Property with given name changes, 
+            return true; else returns false.
+            </summary>
+            <param name="propName">Property Name</param>
+            <returns>Returns bool object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.GetColumnChangeList">
+            <summary>
+            Returns List of Changed Properties.
+            </summary>
+            <returns>Returns a List of strings object. </returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.ValidateObject(System.Boolean)">
+            <summary>
+            Make Validation Operation for Insert/Update Object.
+            </summary>
+            <param name="isUpdate">Determines Validation is for update operation. 
+            If true, Validation is for Update operation else Validation Insert Operation.</param>
+            <returns>Returns IEntityValidationResult object.</returns>
+        </member>
+        <member name="M:FreeLibrary.Entity.IBaseBO.ClearChanges(System.Boolean)">
+            <summary>
+            if includeIdColumn is true, Clears all change columns list, else Clear changes except id column.
+            </summary>
+            <param name="includeIdColumn">id column include determining parameter.</param>
+        </member>
+    </members>
+</doc>

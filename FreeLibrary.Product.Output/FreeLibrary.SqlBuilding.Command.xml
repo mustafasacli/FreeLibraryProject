@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeLibrary.SqlBuilding.Command</name>
+    </assembly>
+    <members>
+        <member name="T:FreeLibrary.SqlBuilding.Command.Command">
+            <summary>
+            Command object.
+            </summary>
+        </member>
+    </members>
+</doc>

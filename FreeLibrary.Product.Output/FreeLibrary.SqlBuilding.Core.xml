@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeLibrary.SqlBuilding.Core</name>
+    </assembly>
+    <members>
+        <member name="P:FreeLibrary.SqlBuilding.Core.Interfaces.ISql.Parameters">
+            <summary>
+            Gets parameters list.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Core.Interfaces.ISql.Text">
+            <summary>
+            Gets Sql Command.
+            </summary>
+        </member>
+        <member name="P:FreeLibrary.SqlBuilding.Core.Interfaces.ISql.DbCommandType">
+            <summary>
+            Gets Sql Command Type.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\Net.FreeLibrary.Control.dll
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\Net.FreeLibrary.Control.pdb
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\Net.FreeLibrary.Core.dll
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\System.Windows.Forms.dll
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\Net.FreeLibrary.Core.pdb
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\obj\Debug\Net.FreeLibrary.Control.csprojResolveAssemblyReference.cache
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\obj\Debug\Net.FreeLibrary.Control.dll
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\obj\Debug\Net.FreeLibrary.Control.pdb
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\Net.FreeLibrary.Control.dll.CodeAnalysisLog.xml
+E:\Projects\SVN_Repository_Projects\FreeLibraryProject\Net.FreeLibrary\Net.FreeLibrary.Control\bin\Debug\Net.FreeLibrary.Control.dll.lastcodeanalysissucceeded

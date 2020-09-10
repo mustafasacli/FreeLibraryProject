@@ -1,0 +1,31 @@
+<app>
+  <app-conn-settings>
+    <connectiontypes>
+      <connectiontype>
+        <name>Sql</name>
+        <connectionstring>Data Source=.\SQLEXPRESS;Initial Catalog=SerkanTestDb;Integrated Security=SSPI;</connectionstring>
+      </connectiontype>
+      <connectiontype>
+        <name>Oracle</name>
+        <connectionstring>Data Source=SC_PROD;User Id=1S4UR;Password=1S4UR2O149WD;</connectionstring>
+      </connectiontype>
+      <connectiontype>
+        <name>PgSQL</name>
+        <connectionstring>Connection string Of PgSQL Connection Type</connectionstring>
+      </connectiontype>
+      <connectiontype>
+        <name>DB2</name>
+        <connectionstring>323111Connection string Of DB2 Connection Type</connectionstring>
+      </connectiontype>
+      <connectiontype>
+        <name>Odbc</name>
+        <connectionstring>Connection string Of Odbc Connection Type</connectionstring>
+      </connectiontype>
+      <connectiontype>
+        <name>Oledb</name>
+        <connectionstring>Provider=Microsoft.Jet.Oledb.4.0;Data Source=E:\Projects\Git_Projects\FreeAccessLibrarySample\FreeAccessLibrarySample1\FreeAccessLibrary_TestWFA\bin\Debug\persons.mdb;</connectionstring>
+      </connectiontype>
+    </connectiontypes>
+  </app-conn-settings>
+  <app-lang>tr-TR</app-lang>
+</app>
